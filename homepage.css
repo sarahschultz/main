@@ -1,0 +1,116 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2E2532;
+    color: #e5ece9;
+    margin: 10px;
+}
+
+h1 {
+    color: #631d76;
+    width: fit-content;
+    border: 4px solid #9e4770;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #fbfbfb;
+}
+
+#app {
+    margin: 10px;
+}
+
+h3 {
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #631D76;
+    background-color: #fbfbfb;
+    border: solid #9e4770;
+    border-radius: 10px;
+    width: fit-content;
+    padding: 5px;
+}
+
+.allpictures {
+        display: inline;
+        padding: 0px;
+        border: solid #9e4770;
+        border-radius: 10px;
+    }
+
+#leela img {
+    max-width: 20%;
+    max-height: auto;
+}
+#cats img {
+    max-width: 30%;
+    max-height: auto;
+}
+#tera img {
+    max-width: 50%;
+    max-height: auto;
+}
+#dcl img{
+    max-width: 30%;
+    max-height: auto;
+}
+#gardening img{
+    max-width: 30%;
+    max-height: auto;
+}
+
+h4 {
+    font-style: oblique;
+    background-color: #fbfbfb;
+    margin: 5px;
+    padding: 5px;
+    font-weight: lighter;
+    color: #631D76;
+    border: solid #9e4770;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+h2 {
+    color: #631D76;
+    font-weight: bolder;
+    background-color: #fbfbfb;
+    border: 2px solid #9e4770;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    width: fit-content;
+}
+.redirectlinks li {
+    list-style-type: square;
+    margin: 5px;
+    }
+    
+/* Link styles below:*/
+/*1) Unvisited*/
+a:link {
+    color: #9e4770;
+  }
+/* 2) Visited*/
+  a:visited {
+    color: #631D76;
+  }
+  
+/* 3)On mouse over*/
+  a:hover {
+    color: hotpink;
+  }
+  
+/* 4) Selected link */
+  a:active {
+    color: pink;
+  }
+
+/* Color Theme: 
+    Generated a color pallatte using Coolors including:
+    Eminence: #631D76 
+    Magenta Haze: #9E4770
+    Raisin Black: #2E2532
+    Mint cream: #e5ece9 [page background color]
+    Vista Blue: #779BE7
+*/

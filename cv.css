@@ -1,0 +1,91 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2E2532;
+    color: #e5ece9;
+    margin: 10px;
+}
+
+h1 {
+    color: #631d76;
+    width: fit-content;
+    border: 4px solid #9e4770;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fbfbfb;
+
+}
+
+h2 {
+    color: #631D76;
+    font-weight: bolder;
+    background-color: #fbfbfb;
+    border: 2px solid #9e4770;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    width: fit-content;
+}
+
+h3 {
+    color: #631D76;
+    background-color: #fbfbfb;
+    border: 2px solid #9e4770;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    width: fit-content;
+}
+
+h4 {
+    font-style: oblique;
+    background-color: #fbfbfb;
+    margin: 5px;
+    padding: 5px;
+    font-weight: lighter;
+    color: #631D76;
+    border: solid #9e4770;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+section {
+    font-size: x-large;
+    margin: 20px;
+}
+
+#title{
+    color: #9e4770;
+    font-style: italic;
+}
+
+.allpictures {
+    display: block;
+    padding: 0px;
+}
+
+.redirectlinks li {
+    list-style-type: square;
+    margin: 5px;
+    border: 2px solid #fbfbfb;
+    }
+    
+/* Link styles below:*/
+/*1) Unvisited*/
+a:link {
+    color: #9e4770;
+  }
+/* 2) Visited*/
+  a:visited {
+    color: #631D76;
+  }
+  
+/* 3)On mouse over*/
+  a:hover {
+    color: hotpink;
+  }
+  
+/* 4) Selected link */
+  a:active {
+    color: pink;
+  }

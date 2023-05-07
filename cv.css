@@ -1,26 +1,34 @@
+:root {
+  --one: #08030D;
+  --two: #15135A;
+  --three: #55334A;
+  --four: #2E31F6;
+  --five: #1C219A;
+  --six: #8B92BB;
+  --seven: #A52DC5;
+  --eight: #fbfbfb;
+}
+  
 body {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2E2532;
-    color: #e5ece9;
-    margin: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-image: radial-gradient(circle,#8b92bb, #a52dc5);
 }
 
 h1 {
-    color: #631d76;
+    color: var(--seven);
     width: fit-content;
-    border: 4px solid #9e4770;
+    border: 4px solid var(--seven);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
-    background-color: #fbfbfb;
-
+    background-color: var(--eight);
 }
 
 h2 {
     color: #631D76;
     font-weight: bolder;
-    background-color: #fbfbfb;
-    border: 2px solid #9e4770;
+    background-color: var(--eight);
+    border: 2px solid var(--seven);
     border-radius: 10px;
     margin: 5px;
     padding: 5px;
@@ -28,9 +36,9 @@ h2 {
 }
 
 h3 {
-    color: #631D76;
-    background-color: #fbfbfb;
-    border: 2px solid #9e4770;
+    color: var(--two);
+    background-color: var(--eight);
+    border: 2px solid var(--seven);
     border-radius: 10px;
     margin: 5px;
     padding: 5px;
@@ -39,12 +47,12 @@ h3 {
 
 h4 {
     font-style: oblique;
-    background-color: #fbfbfb;
+    background-color: var(--eight);
     margin: 5px;
     padding: 5px;
     font-weight: lighter;
-    color: #631D76;
-    border: solid #9e4770;
+    color: var(--two);
+    border: solid var(--seven);
     border-radius: 10px;
     width: fit-content;
 }
@@ -55,37 +63,36 @@ section {
 }
 
 #title{
-    color: #9e4770;
+    color: var(--seven);
     font-style: italic;
 }
 
 .allpictures {
-    display: block;
-    padding: 0px;
+  border: solid var(--seven);
+  border-radius: 10px;
 }
 
-.redirectlinks li {
-    list-style-type: square;
-    margin: 5px;
-    border: 2px solid #fbfbfb;
-    }
+#links {
+  display: flex;
+  flex-flow: column wrap;
+  max-width: fit-content;
+  background-color: var(--seven);
+  color: var(--eight);
+  border: 2px solid var(--eight);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+}
     
-/* Link styles below:*/
-/*1) Unvisited*/
-a:link {
-    color: #9e4770;
-  }
-/* 2) Visited*/
-  a:visited {
-    color: #631D76;
-  }
-  
-/* 3)On mouse over*/
-  a:hover {
-    color: hotpink;
-  }
-  
-/* 4) Selected link */
-  a:active {
-    color: pink;
-  }
+ a:link {
+  color: var(--seven);
+}
+a:visited {
+  color: var(--six);
+}
+a:hover {
+  color: var(--eight);
+}
+a:active {
+  color: var(--four);
+}

@@ -1,116 +1,236 @@
+:root {
+--one: #08030D;
+--two: #15135A;
+--three: #55334A;
+--four: #2E31F6;
+--five: #1C219A;
+--six: #8B92BB;
+--seven: #A52DC5;
+--eight: #fbfbfb;
+}
+
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2E2532;
-    color: #e5ece9;
-    margin: 10px;
-}
-
-h1 {
-    color: #631d76;
-    width: fit-content;
-    border: 4px solid #9e4770;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 5px;
-    background-color: #fbfbfb;
-}
-
-#app {
-    margin: 10px;
-}
-
-h3 {
-    font-style: italic;
-    font-weight: lighter;
-    font-size: 14px;
-    color: #631D76;
-    background-color: #fbfbfb;
-    border: solid #9e4770;
-    border-radius: 10px;
-    width: fit-content;
-    padding: 5px;
+    background-image: radial-gradient(circle,#8b92bb, #a52dc5, #15135a);
 }
 
 .allpictures {
-        display: inline;
-        padding: 0px;
-        border: solid #9e4770;
-        border-radius: 10px;
+    border: solid var(--seven);
+    border-radius: 10px;
     }
 
-#leela img {
-    max-width: 20%;
-    max-height: auto;
-}
-#cats img {
-    max-width: 30%;
-    max-height: auto;
-}
-#tera img {
-    max-width: 50%;
-    max-height: auto;
-}
-#dcl img{
-    max-width: 30%;
-    max-height: auto;
-}
-#gardening img{
-    max-width: 30%;
-    max-height: auto;
+#wholeBody {
+    border: 0.5px dotted var(--six);
+    display: flex;
+    flex-flow: column, wrap;
 }
 
-h4 {
-    font-style: oblique;
-    background-color: #fbfbfb;
+#sidebar {
+display: flex;
+flex-flow: column wrap;
+border: 1px dotted var(--six);
+border-radius: 10px;
+}
+
+.header {
+display: flex;
+flex-flow: column wrap;
+background-color: var(--one);
+border-radius: 10px;
+}
+
+#contactInfo {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: var(--one);
+    color: var(--six);
+    border-radius: 10px;
+    font-size: small;
+}
+
+#phoneIcon {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+#phoneIcon img {
+    max-width: 15%;
+    max-width: auto;
+    margin: 5px;
+    border: var(--four);
+    border-radius: 20px;
+}
+
+#emailIcon {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+#emailIcon img {
+    max-width: 15%;
+    max-width: auto;
+    margin: 5px;
+    border: var(--four);
+    border-radius: 20px;
+}
+
+#twoThirds {
+    color: var(--eight);
+    display: flex;
+    flex-flow: column wrap;
+    background-color: var(--one);
+    padding: 5px;
+    margin: 10px;
+    margin-top: 0px;
+    border-radius: 10px;
+}
+
+h1 {
+    color: var(--seven);
+    width: fit-content;
+    border: 2px solid var(--seven);
+    border-radius: 10px;
     margin: 5px;
     padding: 5px;
-    font-weight: lighter;
-    color: #631D76;
-    border: solid #9e4770;
-    border-radius: 10px;
-    width: fit-content;
+    background-color: var(--eight);
 }
 
 h2 {
-    color: #631D76;
+    color: var(--seven);
     font-weight: bolder;
-    background-color: #fbfbfb;
-    border: 2px solid #9e4770;
+    background-color: var(--eight);
+    border: 2px solid var(--seven);
     border-radius: 10px;
+    max-width: fit-content;
     margin: 5px;
     padding: 5px;
-    width: fit-content;
 }
-.redirectlinks li {
-    list-style-type: square;
-    margin: 5px;
-    }
-    
-/* Link styles below:*/
-/*1) Unvisited*/
-a:link {
-    color: #9e4770;
-  }
-/* 2) Visited*/
-  a:visited {
-    color: #631D76;
-  }
-  
-/* 3)On mouse over*/
-  a:hover {
-    color: hotpink;
-  }
-  
-/* 4) Selected link */
-  a:active {
-    color: pink;
-  }
 
-/* Color Theme: 
-    Generated a color pallatte using Coolors including:
-    Eminence: #631D76 
-    Magenta Haze: #9E4770
-    Raisin Black: #2E2532
-    Mint cream: #e5ece9 [page background color]
-    Vista Blue: #779BE7
-*/
+h3 {
+    color: var(--eight);
+    font-size: small;
+}
+
+#creds {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    font-size: x-small;
+}
+
+.header {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-evenly;
+    align-items: center;
+    padding: 5px;
+}
+#headshot {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: flex-start;
+    padding: 5px;
+    margin: 5px;
+}
+#headshot img {
+    display: flex;
+    justify-items: flex-start;
+    max-width: 200px;
+    max-height: auto;
+    border: solid var(--seven);
+    border-radius: 10px;
+}
+
+#jobTitles {
+    font-size: x-small;  
+    font-style: oblique; 
+}
+
+#mission {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: fit-content;
+    padding: 5px;
+    margin: 5px;
+}
+
+#skills {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: fit-content;
+    margin: 5px;
+    padding: 5px;
+}
+
+#personalPassions {
+    justify-content: left;
+}
+
+#leela {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    padding: 5px;
+}
+#leela img {
+    border: solid var(--seven);
+    border-radius: 10px;
+    max-width: 225px;
+    max-height: auto;
+}
+#cats {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+}
+#cats img {
+    border: solid var(--seven);
+    border-radius: 10px;
+    max-width: 250px;
+    max-height: auto;
+}
+#tera img {
+    max-width: 250px;
+    max-height: auto;
+}
+
+#dcl {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+#dcl img {
+    max-width: 200px;
+}
+
+#gardening img{
+    max-width: 250px;
+    max-height: auto;
+}
+
+#links {
+    display: flex;
+    flex-flow: column wrap;
+    max-width: fit-content;
+    background-color: var(--seven);
+    color: var(--eight);
+    border: 2px solid var(--eight);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+a:link {
+    color: var(--seven);
+  }
+  a:visited {
+    color: var(--six);
+  }
+  a:hover {
+    color: var(--eight);
+  }
+  a:active {
+    color: var(--four);
+  }

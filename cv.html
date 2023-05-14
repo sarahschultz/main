@@ -6,43 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume and Curriculum Vitae</title>
     <link rel="stylesheet" href="cv.css">
+    <link rel="stylesheet" href="stylesheet.css">
     <script defer src="homepage.js"></script>
-
 </head>
 <body>
-<h1>Resume and Curriculum Vitae</h1>
-<section>This page is divided by three main sections, Professional Experience, Professional Certifications, and Formal Education. Scroll to the bottom of the page to navigate back to Homepage or to my Portfolio.</section>
+<!--Start Work Experience Section, leading with developer-->    
+<div id="experienceHeader">
+    <h1> Professional Experience </h1>
+</div>
+<div id="engineer">
+    <div id ="title"><h2>Medical Software Engineer</h2>           
+    </div>
+<div id="engineerDesc">    
+    <h3> April 2023 - Present
+    </br> Tulsa, Oklahoma
 </br>
-<!--Work Experience-->
-<h1>Professional Experience</h1>
-<div id="title">
-    <h3>Apprentice Software Developer - Self-Employed</div>
-April 2023 - Present
 </br>
-Tulsa, Oklahoma
+I love collaborating with medical professionals to understand their needs and requirements for medical software applications, and working closely with the software development team to design, develop, and maintain medical software applications.
+Designing, developing, and maintaining high-quality medical software applications that meet regulatory and quality standards.
 </br>
 </br>
-As a student of the OU Outreach Academy Coding Bootcamp, I am excited about learning objectives such as developing a strong foundation in computer programming, mastering essential coding languages and frameworks, and gaining practical experience working on real-world projects. My participation in the bootcamp program will better prepare me to become proficient in web development, mobile app development, and data science, among other areas.
-    </br>
-    </br>
-I'm excited to:
-    <ul>
-        <li>Expand knowledge of programming languages such as HTML, CSS, JavaScript, and Python</li>
-        <li>Use modern front-end frameworks such as React, Angular, or Vue.js.</li>
-        <li>Explore back-end web development concepts such as API design, database management, and server-side programming using Node.js, Django, or Ruby on Rails.</li>
-        <li>Learn how to develop mobile applications using technologies such as React Native or Swift</li>
-        <li>Dive deeper into data analysis, data visualization, and machine learning using tools such as Python libraries (e.g., Pandas, NumPy, Scikit-learn) or R.</li>
-        <li>Lastly, in addition to technical skills, the bootcamp will cover soft skills such as teamwork, problem-solving, and communication to prepare us for success in a professional setting.</li>
-    </ul>
+For usability, I want to ensure that our software meets the highest standards of accuracy, usability, and compliance. Lastly, as a software engineer, it is important to utilize a deep understanding of software engineering principles. It's also important to have a strong passion for improving healthcare outcomes through user-friendly technology.
+</br>
+</br> I am committed to:
+<ul>
+    <div id=bullets>
+        <li>Writing clean, maintainable, and well-documented code using best practices in software engineering and regulatory compliance. </li>
+        <li>Conducting testing and debugging of software applications to ensure coding accuracy and performance excellency. </li>
+        <li>Working with the software development team to ensure that medical software applications integrate with other systems and platforms. </li>
+        <li>Staying up-to-date with the latest developments in medical technology, regulatory requirements, and software engineering practices. </li>
+        <li>Providing technical support to medical professionals who use our software applications. </li>
+        <li>Collaborating with cross-functional teams, including software developers, quality assurance professionals, and project managers. </li>
+    </div>
+</div>
+</div>
+</ul>
 </h3>
-</br>
+</div>
+</div>
+<!-- Begin the grid that contains my job "cards" that will later be flippy and responsive to 'event listeners' -->
+<div id="gridContainer">
 <!--Bank of Oklahoma-->
-<h3><div id="title">Assisstant Vice President - Senior Auditor Compliance</div>
-BOK Financial
+<div class="experienceBox">
+<h3><div id="title">Assistant Vice President - Senior Auditor Compliance</div>
+<div id="company">BOK Financial
 </br>
 February 2022 - March 2023 
 </br>
 Tulsa, Oklahoma
+</div>
 </br>
 As a Senior Auditor of Compliance, my responsibilities entailed conducting audits and reviewing compliance testing in alignment with the internal audit work plan. In that capacity, I provided an objective evaluation of internal controls, risk management, and governance processes by assessing operational efficiency, financial reporting, and compliance with legal and regulatory standards. Additionally, I was an active member of the Diversity, Equity, and Inclusion Community of Practice.
 </br>
@@ -50,9 +62,11 @@ As a Senior Auditor of Compliance, my responsibilities entailed conducting audit
 In this position, I was able to utilize my expertise in data analysis, auditing, regulatory compliance, compliance management, and consumer protection regulations, among others.
 </h3>
 </br>
+</div>
 <!--CommunityCare-->
+<div class="experienceBox">
 <h3><div id="title">Internal Auditor Compliance</div>
-    CommunityCare HMO of Oklahoma
+    <div id="company">CommunityCare HMO of Oklahoma</div>
 </br>
     June 2016 - February 2022
 </br>
@@ -66,72 +80,89 @@ In this position, I was able to utilize my expertise in data analysis, auditing,
     My attained professional credentials included: the Certified in Healthcare Compliance (CHC) Certification and the Certified in Healthcare Privacy Compliance (CHPC) Certification, both awarded by the CCB, Health Care Compliance Association. I was also a member of the Institute of Internal Auditors (IIA).
 </h3>
 </br>
-<!--AllegianceMD Software Inc-->
-<h3><div id="title">Sales and Marketing Manager</div>
-AllegianceMD Software Inc.
-</br>
-February 2015 - February 2016
-</br>Tulsa, Oklahoma
-</br>
-Primary responsiblity was to reach organizational goals for sales metrics, attaining and implementing marketing initiatives and overseeing departmental operations.Reaching organizational goals for sales metrics, attaining and implementing marketing initiatives and overseeing departmental operations. 
-</br>
-</br>The position required deep knowledge of clinical operations, practice management, medical billing and recoupment, and the ability to communicate with physicians and other business leaders. In addition, working knowledge of all features of the software was required. During implementation of the software, I was responsible for walking through clinical workflows with the physicians and other clinical staff.
-</h3>
-</br>
-</br>
-    
-<!--Certifications-->
-<h1>Professional Certifications</h1>
-    <h3><div id="title">Certified in Healthcare Compliance</div>
-    Expires October 2023
-    <img src="Pictures/chc ccb.jpg" alt="CHC by the CCB"></div>
-</br> 
-    <h3><div id="title">Certified in Healthcare Privacy Compliance</div>
-    Expires March 2024
-    <img src="Pictures/chpc ccb.jpg" alt="CHPC by the CCB"></div> 
-    </h3>
-
-</br>
-</br>
-
-<!--Education-->
-    <h1>Education</h1>
-    <h3><div id="title">Fullstack Academy - University of Oklahoma Coding Outreach Academy</div>
-    April 2023 - expected graduation July 2023
-    </br>
-    Tulsa, Oklahoma
-    </br> 
-    </h3>
-    <h3><div id="title">Master's of Science Healthcare Administration - Oklahoma State University</div>
-    August 2014 - April 2016
-    </br>
-    Tulsa, Oklahoma
-    </br>
-    
-    <h3><div id="title">Bachelor of Arts Anthropology, Pre-Medicine - University of Colorado</div>
-        Graduation May 2014
-        </br>
-        Colorado Springs, CO
-        </br></h3>
-
-
-<!--Nav Links-->
-</br>
-</br>
-    <h4>Check out my LinkedIn page here:
-    <a href="https://www.linkedin.com/in/sarahkuntzschultz/">LinkedIn</a></h4>
-</br>
-
-<!--Navigation Bar-->
-<p> 
-    <div id="links">
-        <a href="homepage.html"> Homepagev</a>
-    </br>
-        <a href="portfolio.html"> Professional Portfolio </a>
-        </h4>
-    </div>
 </div>
+<!--AllegianceMD Software Inc-->
+<div class="experienceBox">
+    <h3><div id="title">Sales and Marketing Manager</div>
+        <div id="company">AllegianceMD Software Inc.</div>
+    </br>
+    February 2015 - February 2016
+    </br>Tulsa, Oklahoma
+    </br>
+    Primary responsiblity was to reach organizational goals for sales metrics, attaining and implementing marketing initiatives and overseeing departmental operations.Reaching organizational goals for sales metrics, attaining and implementing marketing initiatives and overseeing departmental operations. 
+    </br>
+    </br>The position required deep knowledge of clinical operations, practice management, medical billing and recoupment, and the ability to communicate with physicians and other business leaders. In addition, working knowledge of all features of the software was required. During implementation of the software, I was responsible for walking through clinical workflows with the physicians and other clinical staff.
+    </h3>
+    </br></br>
+</div>
+</div>
+</br>
+<!--Education-->
+<div id="educationBox">
+    <h2>Education</h2>
+</br>
+<h3><div id="schools">University of Oklahoma Coding Outreach 
+<br>Fullstack Academy</div>
+April 2023 - expected graduation July 2023
+</br>
+Tulsa, Oklahoma
+</br> 
+</h3>
+<!--OU Fullstack-->
+<h3><div id="schools">Master's of Science Healthcare Administration
+</div>
+<div id="company">Oklahoma State University, Tulsa</div>
+    August 2014 - April 2016
+</br>
+Tulsa, Oklahoma
+</br>
+<!--OSU-->
+<h3><div id="schools">Bachelor of Arts Anthropology, <br>Pre-Medicine Graduate</div>
+    <div id="company">University of Colorado, Colorado Springs</div>
+    Graduation May 2014
+</br>
+Colorado Springs, CO
+</div>
+</br>
+</h3>
+</div> 
+</br>
+<!--Certifications-->
+<div id="certificationsBox">
+    <h2> Certifications </h2>
+    <div id="chc">
+    <h3>
+        <div id="title">Certified in Healthcare Compliance
+        </div>
+    </br>
+    <img src="Pictures/chc ccb.jpg" alt="CHC by the CCB">
+</div> 
+    <div id="chpc">
+    <h3><div id="title">Certified in Healthcare Privacy Compliance
+    </div>
+</br>
+    <img src="Pictures/chpc ccb.jpg" alt="CHPC by the CCB"></div> 
+    </div>    
+    </h3>
+</div> <!--End of the Certifications Box-->
+</div> 
+</br>
+</br>
+<!--Navigation Box-->
+<div id="linksBox">
+<div id="links">
+    <p>
+        <button id="Homepage"> <a href="index.html">Homepage</a>
+        </button>
+    </br>
+    <button id="Professional Portfolio"> <a href="portfolio.html">Professional Portfolio</a>
+    </button>   
+</br>
+    <button id="Connect with Me" > <a href="contact.html">Connect with Me</a>
+    </button>
 </p>
-
+</div><!--End of nav-->
+</div>
+</div>
 </body>
 </html>

@@ -1,5 +1,5 @@
 :root {
-  --one: #08030D;
+  --one: #10061a;
   --two: #15135A;
   --three: #55334A;
   --four: #2E31F6;
@@ -7,92 +7,128 @@
   --six: #8B92BB;
   --seven: #A52DC5;
   --eight: #fbfbfb;
+  --nine: rgb(87, 237, 6);
+}
+
+#experienceHeader {
+  color: var(--nine);
+  font-size: small;
+  margin: 1%;
+  padding: 1%;
+}
+
+.experienceBox {
+  display: flex;
+  flex-flow: row wrap;
+  border: 1px dotted var(--nine);
+  border-radius: 10px;
+  background-color: var(--one);
+  width: 95%;
+}
+
+#engineer {
+  display: flex;
+  flex-flow: row wrap;
+  color: var(--seven);
+  background-image: radial-gradient(var(--three),var(--one));
+  border-radius: 10px;
+  padding: 2%;
+  margin: 1%;
+}
+
+#engineerDesc {
+  color: var(--eight);
+  font-weight: lighter;
+}
+
+#title {
+  color: var(--seven);
+}
+
+#company {
+  color: var(--six);
+  font-size: small;
+}
+
+#educationBox {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: var(--one);
+  border-radius: 10px;
+  padding: 1%;
+  margin: 1%;
+  width: fit-content;
+}
+
+#certificationsBox {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: var(--one);
+  border-radius: 10px;
+  padding: 1%;
+  margin: 1%;
+  width: fit-content;
+  color: var(--six);
+}
+
+#chc {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 1%;
+}
+#chc img {
+  border-radius: 10px;
+  padding: 1%;
+}
+
+#chpc {
+  display: flex;
+  flex-flow: row wrap;
+
+}
+#chpc img {
+  border-radius: 10px;
+  padding: 1%;
+}
+
+#bullets {
+  text-align: justify;
+  text-indent: -5%;
+  padding: 2%;
+  margin: -2%;
+  color: var(--six);
+}
+
+ul {
+  list-style: none;
+}
+ul li::before {
+  content: "\2022";
+  color: var(--nine);
+  font-weight: bold;
+  padding: 1%;
+  margin: 1%;
 }
   
-body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  background-image: radial-gradient(circle,#8b92bb, #a52dc5);
-}
-
-h1 {
-    color: var(--seven);
-    width: fit-content;
-    border: 4px solid var(--seven);
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-    background-color: var(--eight);
-}
-
-h2 {
-    color: #631D76;
-    font-weight: bolder;
-    background-color: var(--eight);
-    border: 2px solid var(--seven);
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
-    width: fit-content;
+#gridContainer {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1.5%;
+  border-radius: 10px;
 }
 
 h3 {
-    color: var(--two);
-    background-color: var(--eight);
-    border: 2px solid var(--seven);
-    border-radius: 10px;
-    margin: 5px;
-    padding: 5px;
-    width: fit-content;
+  color: var(--eight);
 }
 
-h4 {
-    font-style: oblique;
-    background-color: var(--eight);
-    margin: 5px;
-    padding: 5px;
-    font-weight: lighter;
-    color: var(--two);
-    border: solid var(--seven);
-    border-radius: 10px;
-    width: fit-content;
-}
-
-section {
-    font-size: x-large;
-    margin: 20px;
-}
-
-#title{
-    color: var(--seven);
-    font-style: italic;
-}
-
-.allpictures {
-  border: solid var(--seven);
-  border-radius: 10px;
-}
-
-#links {
+#schools {
+  color: var(--nine);
   display: flex;
-  flex-flow: column wrap;
-  max-width: fit-content;
-  background-color: var(--seven);
-  color: var(--eight);
-  border: 2px solid var(--eight);
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
+  flex-flow: row wrap;
 }
-    
- a:link {
-  color: var(--seven);
-}
-a:visited {
-  color: var(--six);
-}
-a:hover {
-  color: var(--eight);
-}
-a:active {
-  color: var(--four);
+
+#linksBox {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
 }
